@@ -1,3 +1,12 @@
 # Enviroment
 /venv
 PlanHogar/.env
+
+# Apps
+/PlanHogar/__pycache__
+
+/users/__pycache__
+/users/migrations/__pycache__
+
+# SqLite DB
+/db.sqlite3
