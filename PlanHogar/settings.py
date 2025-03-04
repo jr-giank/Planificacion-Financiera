@@ -14,6 +14,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -45,7 +47,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
 
     # Apps
-    'PlanHogar'
+    'PlanHogar',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -126,6 +129,8 @@ USE_I18N = True
 
 USE_TZ = True
 
+# Auth
+AUTH_USER_MODEL = 'users.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
