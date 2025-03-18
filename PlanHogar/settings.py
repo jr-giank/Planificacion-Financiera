@@ -48,7 +48,8 @@ INSTALLED_APPS = [
 
     # Apps
     'PlanHogar',
-    'users'
+    'users',
+    'transactions'
 ]
 
 MIDDLEWARE = [
