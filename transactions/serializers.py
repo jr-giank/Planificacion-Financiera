@@ -4,9 +4,9 @@ from .models import Account, Transaction
 class AccountSerializer(serializers.ModelSerializer):
     class Meta:
         model = Account
-        fields = ['id', 'user', 'balance', 'moov_account_id']
+        fields = "__all__"
 
 class TransactionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Transaction
-        fields = ['id', 'sender', 'receiver', 'amount', 'date']
+        fields = "__all__"

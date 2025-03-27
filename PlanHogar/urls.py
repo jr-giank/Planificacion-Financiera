@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path("houses/", HouseListView.as_view(), name="house-list"),
-    path('transactions/', include('transactions.urls'))
+    path("api/houses/", HouseListView.as_view(), name="house-list"),
+    path('api/transactions/', include('transactions.urls')),
+    path("api-auth/", include("rest_framework.urls"))
 ]
