@@ -9,5 +9,8 @@ PlanHogar/.env
 /users/__pycache__
 /users/migrations/__pycache__
 
+/transactions/__pycache__
+/transactions/migrations/__pycache__
+
 # SqLite DB
 /db.sqlite3
